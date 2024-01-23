@@ -1,24 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  status: false,
-  userData: null,
-  cartItems: {},
-};
+// const initialState = {
+//   status: false,
+//   userData: null,
+//   cartItems: {},
+// };
 
 const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    login: (state, action) => {
-      state.status = true;
-      state.userData = action.payload.userData;
-    },
-    logout: (state) => {
-      state.status = false;
-      state.userData = null;
-      state.cartItems = {};
-    },
+    // login: (state, action) => {
+    //   state.status = true;
+    //   state.userData = action.payload.userData;
+    // },
+    // logout: (state) => {
+    //   state.status = false;
+    //   state.userData = null;
+    //   state.cartItems = {};
+    // },
     addToCart: (state, action) => {
       if (action.payload.id in state.cartItems) {
         // console.log("Already present");
